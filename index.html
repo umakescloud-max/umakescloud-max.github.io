@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Umakes.cloud · Concept prototypes for injury practices</title>
+<meta name="description" content="Working concept prototypes of the tools injury-first practices run on, built by Umakes.cloud with synthetic data.">
+<style>
+  :root { --bg: #f6f5f1; --surface: #ffffff; --ink: #1d2521; --muted: #5a645f; --line: #dfe2dc; --accent: #2f5d50; --accent-ink: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #141815; --surface: #1c221e; --ink: #e8ece9; --muted: #a3ada7; --line: #2c342f; --accent: #7fb8a4; --accent-ink: #0f1311; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 48px 0 24px; border-bottom: 1px solid var(--line); }
+  header .brand { font-weight: 650; letter-spacing: -0.01em; }
+  header h1 { font-size: clamp(1.6rem, 4vw, 2.3rem); line-height: 1.2; margin: 12px 0 8px; font-weight: 650; letter-spacing: -0.02em; }
+  header p { margin: 0; color: var(--muted); max-width: 60ch; }
+  main { padding: 16px 0 48px; }
+  section { margin-top: 24px; }
+  h2.step { font-size: 1.15rem; margin: 0 0 14px; font-weight: 650; letter-spacing: -0.01em; }
+  .grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); }
+  .features { margin: 0 0 12px; padding-left: 18px; color: var(--muted); font-size: .95rem; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+  .shot img { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; border-bottom: 1px solid var(--line); }
+  .body { padding: 16px 18px 18px; display: flex; flex-direction: column; flex: 1; }
+  .body h2 { font-size: 1.1rem; margin: 0 0 6px; line-height: 1.3; }
+  .body p { margin: 0 0 12px; color: var(--muted); }
+  .links { margin-top: auto !important; display: flex; gap: 10px; flex-wrap: wrap; }
+  .links a { display: inline-block; padding: 9px 14px; border-radius: 8px; border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-weight: 550; }
+  .links a.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .links a:focus-visible, .shot:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .empty { grid-column: 1 / -1; color: var(--muted); }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--muted); }
+  footer a { color: var(--ink); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">Umakes.cloud</div>
+  <h1>Concept prototypes for injury-first practices</h1>
+  <p>Working concept prototypes of the tools PI coordinators, lien teams and records specialists need, from intake to settlement. Each one runs in your browser with synthetic data: try it yourself. A production version runs on your own cloud, HIPAA-ready, and you own it.</p>
+</div></header>
+<main class="wrap">
+<section>
+<h2 class="step">2. Verify the attorney and the LOP</h2>
+<div class="grid">
+<article class="card">
+  <a class="shot" href="https://umakescloud-max.github.io/lien-reconciliation-release-queue-v1/"><img src="https://umakescloud-max.github.io/lien-reconciliation-release-queue-v1/cover.png" alt="Lien reconciliation and release desk for an injury practice: cover of the concept prototype" width="1200" height="630" loading="lazy"></a>
+  <div class="body">
+    <h2>Lien reconciliation and release desk for an injury practice</h2>
+    <p>Every settled injury lien checked against what was paid and what the closing statement says, before any lien release goes out.</p>
+    <ul class="features"><li>Track every open lien with its attorney, lien holder, billed total, payments posted and balance, from treatment through settlement and release</li><li>Flag settled liens where the payment, the attorney or the lien holder does not match the ledger, with the days left before the attorney's disbursement deadline</li><li>Attach the attorney's settlement or reduction letter to the flagged lien and send it to release review</li><li>Approve each reduction and lien release before the release letter goes to the law firm</li><li>Settlement-to-disbursement closing desk: final closing statement, lien reduction proposals and signed lien resolution tracking with discrepancies flagged before disbursement approval</li></ul>
+    <p class="links"><a class="primary" href="https://umakescloud-max.github.io/lien-reconciliation-release-queue-v1/">Open demo</a><a href="https://github.com/umakescloud-max/lien-reconciliation-release-queue-v1#readme">Case study</a></p>
+  </div>
+</article>
+</div>
+</section>
+<section>
+<h2 class="step">4. Records requests and releases</h2>
+<div class="grid">
+<article class="card">
+  <a class="shot" href="https://umakescloud-max.github.io/records-request-release-queue-v1/"><img src="https://umakescloud-max.github.io/records-request-release-queue-v1/cover.png" alt="Records request and release desk for an injury practice: cover of the concept prototype" width="1200" height="630" loading="lazy"></a>
+  <div class="body">
+    <h2>Records request and release desk for an injury practice</h2>
+    <p>Every law firm request for records, bills, narratives and depositions matched to the right chart, followed up and checked before release.</p>
+    <ul class="features"><li>Track every records and itemized bill request from law firms, from arrival through release, with the channel it came in on and the firm's due date</li><li>Match each request to the right chart and check the patient's authorization for signature, expiry, birth date and date range, flagging any mismatch with the days left before the firm's due date</li><li>Attach a corrected authorization to the flagged request and send it to release review</li><li>Approve each records packet, with the itemized bill and final balance taken from the ledger, before it is released to the firm</li><li>Track narrative report and deposition requests from motor vehicle accident cases alongside records requests, with the assigned physician, the deposition date and a follow-up date on every open request, and a follow-ups list for chasing physicians and firms before deadlines slip</li></ul>
+    <p class="links"><a class="primary" href="https://umakescloud-max.github.io/records-request-release-queue-v1/">Open demo</a><a href="https://github.com/umakescloud-max/records-request-release-queue-v1#readme">Case study</a></p>
+  </div>
+</article>
+</div>
+</section>
+<section>
+<h2 class="step">7. Itemized bills and ledgers</h2>
+<div class="grid">
+<article class="card">
+  <a class="shot" href="https://umakescloud-max.github.io/pip-claim-denial-tracker-v1/"><img src="https://umakescloud-max.github.io/pip-claim-denial-tracker-v1/cover.png" alt="PIP claim and denial tracker for an injury practice: cover of the concept prototype" width="1200" height="630" loading="lazy"></a>
+  <div class="body">
+    <h2>PIP claim and denial tracker for an injury practice</h2>
+    <p>Every PIP claim tracked from submission to payment, with denials sorted by reason and appeal deadlines counted down.</p>
+    <ul class="features"><li>Track every PIP claim from submission through payment, denial or handoff, with the carrier, adjuster and benefits used so far</li><li>Sort each carrier EOB into paid, underpaid, denied, records requested or benefits exhausted, and flag exhaustion notices that do not match the carrier's own payment history</li><li>Count down appeal and timely filing deadlines on every open denial</li><li>Approve each reconsideration before it goes to the adjuster, or hand a truly exhausted balance to the LOP coordinator with the full claim history</li><li>PIP claim follow-up queue with denied and unpaid balances, itemized bill and ledger prep at MMI, and reduction requests awaiting physician approval</li></ul>
+    <p class="links"><a class="primary" href="https://umakescloud-max.github.io/pip-claim-denial-tracker-v1/">Open demo</a><a href="https://github.com/umakescloud-max/pip-claim-denial-tracker-v1#readme">Case study</a></p>
+  </div>
+</article>
+</div>
+</section>
+<section>
+<h2 class="step">Earlier healthcare prototypes</h2>
+<div class="grid">
+<article class="card">
+  <a class="shot" href="https://umakescloud-max.github.io/emr-chart-review-flags-v1/"><img src="https://umakescloud-max.github.io/emr-chart-review-flags-v1/cover.png" alt="Daily chart review flags for an 8-provider family medicine group: cover of the concept prototype" width="1200" height="630" loading="lazy"></a>
+  <div class="body">
+    <h2>Daily chart review flags for an 8-provider family medicine group</h2>
+    <p>Reviews every chart from recent visits, flags documentation gaps with a reason, and holds billing until staff approve the fix.</p>
+    <p class="links"><a class="primary" href="https://umakescloud-max.github.io/emr-chart-review-flags-v1/">Open demo</a><a href="https://github.com/umakescloud-max/emr-chart-review-flags-v1#readme">Case study</a></p>
+  </div>
+</article>
+<article class="card">
+  <a class="shot" href="https://umakescloud-max.github.io/clinician-facility-clearance-tracker-v1/"><img src="https://umakescloud-max.github.io/clinician-facility-clearance-tracker-v1/cover.png" alt="Clinician clearance tracker for a mobile dysphagia diagnostics group: cover of the concept prototype" width="1200" height="630" loading="lazy"></a>
+  <div class="body">
+    <h2>Clinician clearance tracker for a mobile dysphagia diagnostics group</h2>
+    <p>Tracks each contract clinician's clearance at every partner facility, flags blocked packets, and holds resubmissions for staff review.</p>
+    <p class="links"><a class="primary" href="https://umakescloud-max.github.io/clinician-facility-clearance-tracker-v1/">Open demo</a><a href="https://github.com/umakescloud-max/clinician-facility-clearance-tracker-v1#readme">Case study</a></p>
+  </div>
+</article>
+<article class="card">
+  <a class="shot" href="https://umakescloud-max.github.io/incident-report-tracker-v1/"><img src="https://umakescloud-max.github.io/incident-report-tracker-v1/cover.png" alt="Regulatory incident report tracker for a 5-community senior living group: cover of the concept prototype" width="1200" height="630" loading="lazy"></a>
+  <div class="body">
+    <h2>Regulatory incident report tracker for a 5-community senior living group</h2>
+    <p>Tracks each resident incident from the care record to the state filing, flags missing details, and has staff approve every filing.</p>
+    <p class="links"><a class="primary" href="https://umakescloud-max.github.io/incident-report-tracker-v1/">Open demo</a><a href="https://github.com/umakescloud-max/incident-report-tracker-v1#readme">Case study</a></p>
+  </div>
+</article>
+<article class="card">
+  <a class="shot" href="https://umakescloud-max.github.io/evv-visit-exception-queue-v1/"><img src="https://umakescloud-max.github.io/evv-visit-exception-queue-v1/cover.png" alt="Home care visit verification and billing hold queue: cover of the concept prototype" width="1200" height="630" loading="lazy"></a>
+  <div class="body">
+    <h2>Home care visit verification and billing hold queue</h2>
+    <p>One queue for home care visits with missing or mismatched EVV records, held from billing until a coordinator signs off.</p>
+    <p class="links"><a class="primary" href="https://umakescloud-max.github.io/evv-visit-exception-queue-v1/">Open demo</a><a href="https://github.com/umakescloud-max/evv-visit-exception-queue-v1#readme">Case study</a></p>
+  </div>
+</article>
+</div>
+</section>
+</main>
+<footer><div class="wrap">
+  <p>If your team fights one of these every week, book a free workflow audit at <a href="https://umakes.cloud">umakes.cloud</a> or reply to <a href="mailto:umakescloud@gmail.com">umakescloud@gmail.com</a>.</p>
+</div></footer>
+</body>
+</html>
